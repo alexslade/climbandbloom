@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+.content {
+  @media(min-width: 1024px) {
+    lost-column: 6/12 2;
+  }
+
+  @media(min-width: 1200px) {
+    lost-offset: 1/12;
+    lost-column: 5/12 2;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.header {
+  h1 {
+    font-family: 'HeaderTest';
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 0.1em;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+
+    @media (min-width: 375px) {
+      font-size: calc(.03273*100vw + 12.72727px);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 52px;
+    }
+  }
+
+  h2 {
+    @extend h1;
+    color: $light-grey;
+    padding-bottom: 0.5em;
+  }
+
+  @media (min-width: 1024px) {
+    lost-column: 1/2;
+  }
+}

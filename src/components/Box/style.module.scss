@@ -1,0 +1,7 @@
+.padded {
+  padding: 30px;
+
+  @media (min-width: 520px) {
+    padding: 60px;
+  }
+}
