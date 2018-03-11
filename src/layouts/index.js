@@ -8,10 +8,10 @@ import s from '../styles/index.module.scss'
 const TemplateWrapper = ({ children }) => (
   <div className={s.body}>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Climb and Bloom"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Radically effecting support for startups and new products' },
+        // { name: 'keywords', content: '' },
       ]}
     />
     <div className={s.section}>
