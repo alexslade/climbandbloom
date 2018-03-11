@@ -6,11 +6,10 @@ const Header = () => (
   <div className={s.header}>
     <h1>
       Climb and Bloom
-      <svg className={s.leaf} transform="scale(-1,1)" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
-        <title>leaf</title>
+      <svg className={s.leaf} viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
         <g>
           <title>Layer 1</title>
-          <path id="svg_1" d="m595.223816,392.677551c-387.070389,163.258362 -545.501865,-257.993881 -522.358368,-295.871704c23.143494,-37.877827 480.03891,-87.727917 522.358368,295.871704z" fill="#29ca38"/>
+          <path id="svg_1" d="M51.83 1.62C47.74 -1.95 -7.23 9.24 2.06 55.64C53.1 60.31 55.92 5.18 51.83 1.62Z" fill="#29ca38"/>
         </g>
        </svg>
     </h1>
