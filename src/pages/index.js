@@ -9,10 +9,10 @@ class IndexPage extends React.Component {
       <Box>
         <Header />
         <div className={s.content}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada dolor. Proin feugiat, mauris non consequat ultrices, elit sem dictum augue, a faucibus justo eros non magna. </p>
-          <p>Sed commodo porta lorem, et suscipit eros ultricies a. Etiam ut ligula sit amet augue congue semper. Quisque interdum justo tellus, a vehicula nulla lobortis ut. Nulla nisi lectus, vehicula et feugiat ut, aliquam in massa. Nam eu suscipit turpis. </p>
-          <p>Duis quis nisi eget ipsum eleifend rutrum. Maecenas at scelerisque nisl, vitae condimentum erat. Pellentesque nec tellus gravida justo faucibus ornare vitae sed magna.</p>
-          <p>Etiam ut pulvinar est. Pellentesque ut lorem odio. Nullam euismod elementum augue quis laoreet. Cras a tortor hendrerit, efficitur nisl eget, imperdiet mauris. Curabitur ut consequat quam.</p>
+          <p> Pommy ipsum posh nosh punter grub's up you mean it ain't me noggin' stiff upper lip, black cab had a barney with the inlaws Sherlock grub's up. Make a brew cobbles it's the bees knees football accordingly by 'eck love. </p>
+          <p> Gutted a bit wonky copper Kate and Will, bossy britches on the beat plum pudding and we all like figgy pudding. Ask your mother if a comely wench copped a bollocking bit of a div they can sod off see a man about a dog big light narky ear hole. </p>
+          <p> Hard cheese old boy doofer bottled it chav I bid you good day bent as a nine bob note darling, wind up had a barney with the inlaws doing my head in it's me peepers.  </p>
+          <p> It's nicked doing my head in copper throw a paddy narky damn, sweets bull dog pie-eyed know your onions. </p>
         </div>
         <Button to="mailto:alex@climbandbloom.com">Contact us</Button>
       </Box>
