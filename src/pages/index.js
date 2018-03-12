@@ -1,20 +1,83 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import {Box, Header, Button} from '../components'
+import {Slide, Header, Button} from '../components'
 import s from './home.module.scss'
+import keydown from 'react-keydown';
+
+  // window.addEventListener('keypress', handleEvent);
+
+
+// turns DOM event into action,
+// you can define many of those
+// function globalKeyPress(e) {
+//   return {
+//     type: 'GLOBAL_KEY_PRESS',
+//     key: e.key
+//   };
+// }
+
+// subscribe to event
+// let unlistenKeyPress = listenToWindowEvent(dispatch, 'keypress', globalKeyPress);
+// eventually unsubscribe
+// unlistenKeyPress();
 
 class IndexPage extends React.Component {
+
+  @keydown( ['right', 'left'] )
+  onKeyDown(e){
+    if(e.key == 'ArrowRight'){
+      this.setState((prevState, props) => ({
+        current: prevState.current + 1
+      }));
+    }
+    if(e.key == 'ArrowLeft'){
+      this.setState((prevState, props) => ({
+        current: prevState.current - 1
+      }));
+    }
+
+    history.pushState({}, "page n", `#${this.state.current}`);
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {current: 1};
+  }
+
   render() {
     return (
-      <Box>
-        <div className={s.content}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada dolor. Proin feugiat, mauris non consequat ultrices, elit sem dictum augue, a faucibus justo eros non magna. </p>
-          <p>Sed commodo porta lorem, et suscipit eros ultricies a. Etiam ut ligula sit amet augue congue semper. Quisque interdum justo tellus, a vehicula nulla lobortis ut. Nulla nisi lectus, vehicula et feugiat ut, aliquam in massa. Nam eu suscipit turpis. </p>
-          <p>Duis quis nisi eget ipsum eleifend rutrum. Maecenas at scelerisque nisl, vitae condimentum erat. Pellentesque nec tellus gravida justo faucibus ornare vitae sed magna.</p>
-          <p>Etiam ut pulvinar est. Pellentesque ut lorem odio. Nullam euismod elementum augue quis laoreet. Cras a tortor hendrerit, efficitur nisl eget, imperdiet mauris. Curabitur ut consequat quam.</p>
-        </div>
-        <Button to="mailto:alex@climbandbloom.com">Contact us</Button>
-      </Box>
+      <div>
+        {this.state.current}
+        <Slide pos="1" current={this.state.current}>
+          <div className={`${s.content} ${s.question}`}>
+            <p>@AlexHeeton</p>
+          <p>
+            Climb and Bloom
+            <svg className={s.leaf} viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <title>Layer 1</title>
+                <path id="svg_1" d="M51.83 1.62C47.74 -1.95 -7.23 9.24 2.06 55.64C53.1 60.31 55.92 5.18 51.83 1.62Z" fill="#29ca38"/>
+              </g>
+            </svg>
+          </p>
+          <p><span className={s.small}>lrug.climbandbloom.com</span></p>
+          </div>
+        </Slide>
+
+
+        <Slide pos="2" current={this.state.current}>
+          <div className={`${s.content} ${s.question}`}>
+            <p>Background: <br/> Startups</p>
+          </div>
+        </Slide>
+
+        <Slide pos="3" current={this.state.current}>
+          <div className={`${s.content} ${s.question}`}>
+            <p><span className={s.small}>lrug.climbandbloom.com</span></p>
+          </div>
+        </Slide>
+
+      </div>
     )
   }
 }
