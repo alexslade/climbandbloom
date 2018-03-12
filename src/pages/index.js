@@ -7,7 +7,6 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Box>
-        <Header />
         <div className={s.content}>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada dolor. Proin feugiat, mauris non consequat ultrices, elit sem dictum augue, a faucibus justo eros non magna. </p>
           <p>Sed commodo porta lorem, et suscipit eros ultricies a. Etiam ut ligula sit amet augue congue semper. Quisque interdum justo tellus, a vehicula nulla lobortis ut. Nulla nisi lectus, vehicula et feugiat ut, aliquam in massa. Nam eu suscipit turpis. </p>
