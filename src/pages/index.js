@@ -11,7 +11,7 @@ class IndexPage extends React.Component {
         <div className={s.content}>
           <p> We like to keep things simple. </p>
           <p> If you have a product or a startup, we specialise in making you more successful. That's it. </p>
-          <p> For brand new founders, we help with technical roadmapping. If you've already launched something, maybe you'd like support on monitoring and anlyising the results. Or if you have a product that's struggling, we can help identify problems with your team and processes. </p>
+          <p> For brand new founders, we help with technical roadmapping. If you've already launched something, maybe you'd like support on monitoring and analysing the results. Or if you have a product that's struggling, we can help identify problems with your team and processes. </p>
           <p> We'll save you time and money, and help your products reach the vision that you've set for them.</p>
         </div>
         <Button to="mailto:alex@climbandbloom.com">Contact us</Button>
